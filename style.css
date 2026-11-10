@@ -1,0 +1,58 @@
+/*
+  Name: M Ali Siddiqui
+  Roll Number: 21i-263214
+  Section: SE-B
+*/
+
+body {
+  background-color: lightyellow;
+  color: black;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.header {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.hero {
+  margin-top: 20px;
+}
+
+.hero img {
+  border: 2px solid black;
+}
+
+.hero-text {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+}
+
+.pet {
+  display: inline-block;
+  width: 180px;
+  margin: 20px;
+  vertical-align: top;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+
+table {
+  width: 500px;
+  text-align: center;
+}

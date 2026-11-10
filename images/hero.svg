@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350"><rect width="600" height="350" fill="#bfe3f5"/>
+<rect y="270" width="600" height="80" fill="#8cc474"/>
+<path d="M230 130 L120 290 L330 290 L370 130 Z" fill="#d93a2b"/>
+<ellipse cx="300" cy="200" rx="75" ry="80" fill="#c9954c"/><rect x="250" y="240" width="100" height="40" rx="12" fill="#2a5bd7"/>
+<ellipse cx="250" cy="120" rx="28" ry="50" fill="#8a5a22"/><ellipse cx="350" cy="120" rx="28" ry="50" fill="#8a5a22"/>
+<ellipse cx="300" cy="140" rx="60" ry="62" fill="#c9954c"/>
+<circle cx="278" cy="128" r="7" fill="#222"/><circle cx="322" cy="128" r="7" fill="#222"/>
+<ellipse cx="300" cy="155" rx="11" ry="8" fill="#222"/><path d="M285 170 Q300 183 315 170" stroke="#222" stroke-width="3" fill="none"/>
+<text x="300" y="333" text-anchor="middle" font-family="Verdana" font-size="20" fill="#333">Our hero: ready to guard your home!</text></svg>

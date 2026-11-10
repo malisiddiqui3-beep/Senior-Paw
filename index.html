@@ -1,0 +1,88 @@
+<!-- 
+  Name: M Ali Siddiqui
+  Roll Number: 21i-263214
+  Section: SE-B
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Senior Paws</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Senior Paws</h1>
+    <p>Home | Pets | Contact</p>
+  </div>
+
+  <div class="hero">
+    <img src="images/hero.svg" width="300">
+    <div class="hero-text">
+      <h2>Give a pet a home</h2>
+      <p>Every pet needs a home. Please adopt a pet from us. All our pets are vaccinated and healthy.</p>
+    </div>
+  </div>
+
+  <div class="pet">
+    <img src="images/daisy.svg" width="150">
+    <p>Name: Daisy</p>
+    <p>Age: 2</p>
+    <p>Breed: Labrador</p>
+    <button onclick="adoptPet('Daisy')">Adopt me!</button>
+  </div>
+
+  <div class="pet">
+    <img src="images/luna.svg" width="150">
+    <p>Name: Luna</p>
+    <p>Age: 1</p>
+    <p>Breed: Persian</p>
+    <button onclick="adoptPet('Luna')">Adopt me!</button>
+  </div>
+
+  <div class="pet">
+    <img src="images/tony.svg" width="150">
+    <p>Name: Tony</p>
+    <p>Age: 3</p>
+    <p>Breed: Bull dog</p>
+    <button onclick="adoptPet('Tony')">Adopt me!</button>
+  </div>
+
+  <br><br>
+
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Breed</th>
+      <th>Vaccinated</th>
+    </tr>
+    <tr>
+      <td>Daisy</td>
+      <td>2</td>
+      <td>Labrador</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Luna</td>
+      <td>1</td>
+      <td>Persian</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Tony</td>
+      <td>3</td>
+      <td>Bull dog</td>
+      <td>Yes</td>
+    </tr>
+  </table>
+
+  <script>
+    function adoptPet(petName) {
+      console.log("Adopt me button was clicked for " + petName);
+      window.alert("Thank you for adopting " + petName + "!");
+    }
+  </script>
+
+</body>
+</html>
