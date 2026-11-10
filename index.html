@@ -1,88 +1,59 @@
-<!-- 
-  Name: M Ali Siddiqui
-  Roll Number: 21i-263214
-  Section: SE-B
--->
+<!-- Name: M Ali Siddiqui | Roll Number: 21i-263214 | Section: SE-B -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Senior Paws</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Paws | Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="header">
+  <header class="header">
     <h1>Senior Paws</h1>
-    <p>Home | Pets | Contact</p>
-  </div>
-
-  <div class="hero">
-    <img src="images/hero.svg" width="300">
-    <div class="hero-text">
-      <h2>Give a pet a home</h2>
-      <p>Every pet needs a home. Please adopt a pet from us. All our pets are vaccinated and healthy.</p>
-    </div>
-  </div>
-
-  <div class="pet">
-    <img src="images/daisy.svg" width="150">
-    <p>Name: Daisy</p>
-    <p>Age: 2</p>
-    <p>Breed: Labrador</p>
-    <button onclick="adoptPet('Daisy')">Adopt me!</button>
-  </div>
-
-  <div class="pet">
-    <img src="images/luna.svg" width="150">
-    <p>Name: Luna</p>
-    <p>Age: 1</p>
-    <p>Breed: Persian</p>
-    <button onclick="adoptPet('Luna')">Adopt me!</button>
-  </div>
-
-  <div class="pet">
-    <img src="images/tony.svg" width="150">
-    <p>Name: Tony</p>
-    <p>Age: 3</p>
-    <p>Breed: Bull dog</p>
-    <button onclick="adoptPet('Tony')">Adopt me!</button>
-  </div>
-
-  <br><br>
-
-  <table border="1">
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Breed</th>
-      <th>Vaccinated</th>
-    </tr>
-    <tr>
-      <td>Daisy</td>
-      <td>2</td>
-      <td>Labrador</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Luna</td>
-      <td>1</td>
-      <td>Persian</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td>Tony</td>
-      <td>3</td>
-      <td>Bull dog</td>
-      <td>Yes</td>
-    </tr>
-  </table>
-
+    <p class="tagline">A loving home for every paw</p>
+    <nav aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="pets.html">Our Pets</a>
+      <a href="adopt.html">How to Adopt</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="images/hero.svg" alt="Illustration of a happy dog and cat">
+      <div class="hero-text">
+        <h2>Give a Pet a Home</h2>
+        <p>Every pet deserves a safe and loving home. At <span class="highlight">Senior Paws</span>, we help caring people meet pets who are ready for a new beginning.</p>
+        <p>Our featured pets are vaccinated and waiting to meet their future families.</p>
+        <a class="button-link" href="pets.html">Meet Our Pets</a>
+      </div>
+    </section>
+    <h2>Meet a Few of Our Friends</h2>
+    <section class="card-grid">
+      <article class="pet">
+        <img src="images/daisy.svg" alt="Daisy the Labrador">
+        <h3>Daisy</h3><p>Age: 2 years</p><p>Breed: Labrador</p>
+        <button onclick="adoptPet('Daisy')">Adopt me!</button>
+      </article>
+      <article class="pet">
+        <img src="images/luna.svg" alt="Luna the Persian cat">
+        <h3>Luna</h3><p>Age: 1 year</p><p>Breed: Persian</p>
+        <button onclick="adoptPet('Luna')">Adopt me!</button>
+      </article>
+      <article class="pet">
+        <img src="images/tony.svg" alt="Tony the bulldog">
+        <h3>Tony</h3><p>Age: 3 years</p><p>Breed: Bulldog</p>
+        <button onclick="adoptPet('Tony')">Adopt me!</button>
+      </article>
+    </section>
+    <p style="text-align:center"><a class="button-link" href="adopt.html">Learn How Adoption Works</a></p>
+  </main>
+  <footer><p>© 2026 Senior Paws | Every paw deserves a home.</p><p>Made with care by M Ali Siddiqui</p></footer>
   <script>
     function adoptPet(petName) {
       console.log("Adopt me button was clicked for " + petName);
-      window.alert("Thank you for adopting " + petName + "!");
+      window.alert("Thank you for your interest in adopting " + petName + "! Please visit our How to Adopt page.");
     }
   </script>
-
 </body>
 </html>
