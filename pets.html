@@ -1,0 +1,27 @@
+<!-- Name: M Ali Siddiqui | Roll Number: 21i-263214 | Section: SE-B -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Paws | Our Pets</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header"><h1>Senior Paws</h1><p class="tagline">Meet your new best friend</p>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="pets.html">Our Pets</a><a href="adopt.html">How to Adopt</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main>
+    <h2>Pets Looking for a Family</h2>
+    <p style="text-align:center">Every pet has a different personality. Take a look and see who might be the right match for your home.</p>
+    <section class="card-grid">
+      <article class="pet"><img src="images/daisy.svg" alt="Daisy the Labrador"><h3>Daisy</h3><p><strong>Age:</strong> 2 years</p><p><strong>Breed:</strong> Labrador</p><p>Friendly, playful and always ready for a walk.</p><button onclick="adoptPet('Daisy')">I'm interested</button></article>
+      <article class="pet"><img src="images/luna.svg" alt="Luna the Persian cat"><h3>Luna</h3><p><strong>Age:</strong> 1 year</p><p><strong>Breed:</strong> Persian</p><p>Calm, gentle and happiest in a cozy spot.</p><button onclick="adoptPet('Luna')">I'm interested</button></article>
+      <article class="pet"><img src="images/tony.svg" alt="Tony the bulldog"><h3>Tony</h3><p><strong>Age:</strong> 3 years</p><p><strong>Breed:</strong> Bulldog</p><p>A relaxed companion who loves attention.</p><button onclick="adoptPet('Tony')">I'm interested</button></article>
+    </section>
+    <h2>Pet Information</h2>
+    <table><tr><th>Name</th><th>Age</th><th>Breed</th><th>Vaccinated</th></tr><tr><td>Daisy</td><td>2</td><td>Labrador</td><td>Yes</td></tr><tr><td>Luna</td><td>1</td><td>Persian</td><td>Yes</td></tr><tr><td>Tony</td><td>3</td><td>Bulldog</td><td>Yes</td></tr></table>
+    <p style="text-align:center"><a class="button-link" href="adopt.html">Read the Adoption Steps</a></p>
+  </main>
+  <footer><p>© 2026 Senior Paws | Every paw deserves a home.</p><p>Made with care by M Ali Siddiqui</p></footer>
+  <script>function adoptPet(petName) { console.log("Interest registered for " + petName); window.alert("Thanks for your interest in " + petName + "! Contact us to learn more."); }</script>
+</body>
+</html>
