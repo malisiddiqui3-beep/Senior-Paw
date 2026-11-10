@@ -1,0 +1,33 @@
+<!-- Name: M Ali Siddiqui | Roll Number: 21i-263214 | Section: SE-B -->
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Senior Paws | Contact</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="header"><h1>Senior Paws</h1><p class="tagline">We would love to hear from you</p>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="pets.html">Our Pets</a><a href="adopt.html">How to Adopt</a><a class="active" href="contact.html">Contact</a></nav>
+  </header>
+  <main>
+    <h2>Get in Touch</h2>
+    <p style="text-align:center">Interested in adopting Daisy, Luna or Tony? Send us a message and tell us how we can help.</p>
+    <form onsubmit="sendMessage(event)">
+      <label for="name">Your name</label><input type="text" id="name" name="name" required placeholder="Enter your name">
+      <label for="email">Email address</label><input type="email" id="email" name="email" required placeholder="Enter your email">
+      <label for="pet">Pet you are interested in</label><select id="pet" name="pet"><option value="Not sure yet">Not sure yet</option><option>Daisy</option><option>Luna</option><option>Tony</option></select>
+      <label for="message">Your message</label><textarea id="message" name="message" required placeholder="Write your question here"></textarea>
+      <button type="submit">Send inquiry</button>
+    </form>
+    <section class="card" style="margin-top:24px"><h3>Our Promise</h3><p>We aim to help each pet find a caring home. Please provide accurate details so we can understand your inquiry.</p></section>
+  </main>
+  <footer><p>© 2026 Senior Paws | Every paw deserves a home.</p><p>Made with care by M Ali Siddiqui</p></footer>
+  <script>
+    function sendMessage(event) {
+      event.preventDefault();
+      const visitorName = document.getElementById('name').value;
+      const selectedPet = document.getElementById('pet').value;
+      console.log('Contact inquiry submitted by ' + visitorName + ' about ' + selectedPet);
+      window.alert('Thank you, ' + visitorName + '! Your inquiry has been recorded for this demo.');
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
